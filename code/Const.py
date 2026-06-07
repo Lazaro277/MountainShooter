@@ -131,11 +131,11 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
                     'Player2': pygame.K_LCTRL}
 
 # S
-SPAWN_TIME = 3000
+SPAWN_TIME = 2000
 
 # T
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 700
+TIMEOUT_LEVEL = 10000
 
 # W
 WIN_WIDTH = 576
