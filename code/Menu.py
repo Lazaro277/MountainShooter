@@ -1,7 +1,7 @@
 #!/usr/bin/pithon
 # -*- coding: utf-8 -*-
 import pygame
-from pygame import Font, Surface, Rect
+from pygame import Font, Surface, Rect, K_ESCAPE
 from code.Const import WIN_WIDTH, C_ORANGE, MENU_OPTION, C_WHITE, C_YELLOW
 
 
@@ -48,6 +48,9 @@ class Menu:
                             menu_option = len(MENU_OPTION) - 1
                     if event.key == pygame.K_RETURN:
                         return MENU_OPTION[menu_option]
+                    if event.key == K_ESCAPE:
+                        pygame.quit()
+                        quit()
 
 
 
