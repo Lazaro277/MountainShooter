@@ -1,8 +1,5 @@
 ![alt text](https://github.com/Lazaro277/MountainShooter/blob/8527a921d2c33755f4ff3ef5e1fb4ff70d0cfc89/asset/Player1.png) Mountain Shooter ![alt text](https://github.com/Lazaro277/MountainShooter/blob/8527a921d2c33755f4ff3ef5e1fb4ff70d0cfc89/asset/Player1.png)
 ===============
- 
-
-# 🏔️ Mountain Shooter
 
 Mountain Shooter is a 2D arcade shooter game developed in **Python** using **Pygame**.
 
