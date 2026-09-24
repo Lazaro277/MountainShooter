@@ -54,6 +54,7 @@ MountainShooter/
 │   └── game assets
 │
 ├── code/
+|   ├── AssetPath.py
 │   ├── Background.py
 │   ├── Const.py
 │   ├── DBProxy.py
