@@ -3,18 +3,19 @@
 import pygame
 from pygame import Font, Surface, Rect, K_ESCAPE
 from code.Const import WIN_WIDTH, C_ORANGE, MENU_OPTION, C_WHITE, C_YELLOW
+from code.AssetPath import asset_path
 
 
 class Menu:
 
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha()
+        self.surf = pygame.image.load(asset_path('MenuBg.png')).convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self):
         menu_option = 0
-        pygame.mixer_music.load('./asset/Menu.mp3')
+        pygame.mixer_music.load(asset_path('Menu.mp3'))
         pygame.mixer_music.play(-1)
 
         while True:

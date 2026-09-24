@@ -13,6 +13,7 @@ from code.Entity import Entity
 from code.EntityFactory import EntityFactory
 from code.EntityMediator import EntityMediator
 from code.Player import Player
+from code.AssetPath import asset_path
 
 
 class Level:
@@ -34,7 +35,7 @@ class Level:
         pygame.time.set_timer(EVENT_TIMEOUT, TIMEOUT_STEP)
 
     def run(self, player_score: list[int]):
-        pygame.mixer_music.load(f'./asset/{self.name}.mp3')
+        pygame.mixer_music.load(asset_path(f'{self.name}.mp3'))
         pygame.mixer_music.set_volume(0.3)
         pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()

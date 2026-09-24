@@ -7,17 +7,18 @@ from pygame.constants import K_RETURN, K_BACKSPACE, K_ESCAPE
 
 from code.Const import C_YELLOW, SCORE_POS, MENU_OPTION, C_WHITE, C_CYAN
 from code.DBProxy import DBProxy
+from code.AssetPath import asset_path
 
 
 class Score:
     def __init__(self, window: Surface):
         self.window = window
-        self.surf = pygame.image.load('./asset/ScoreBg.png').convert_alpha()
+        self.surf = pygame.image.load(asset_path('ScoreBg.png')).convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
         pass
 
     def save(self, game_mode: str, player_score: list[int]):
-        pygame.mixer_music.load('./asset/Score.mp3')
+        pygame.mixer_music.load(asset_path('Score.mp3'))
         pygame.mixer_music.play(-1)
         db_proxy = DBProxy('DBScore')
         name = ''
